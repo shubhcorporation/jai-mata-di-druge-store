@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JAI MATA DI DRUG STORE</title>
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+    body{background:#f8f9fa;color:#333;scroll-behavior:smooth;}
+    header{background:#1d3557;color:#fff;padding:15px 30px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:1000;}
+    header h1{font-size:22px;letter-spacing:1px;}
+    nav ul{list-style:none;display:flex;gap:25px;}
+    nav ul li a{text-decoration:none;color:#fff;font-weight:500;transition:.3s;}
+    nav ul li a:hover{color:#f1faee;}
+    .menu-toggle{display:none;font-size:26px;cursor:pointer;color:#fff;}
+    @media(max-width:768px){
+      nav ul{flex-direction:column;display:none;background:#1d3557;position:absolute;top:60px;right:0;width:200px;padding:20px;}
+      nav ul.active{display:flex;}
+      .menu-toggle{display:block;}
+    }
+
+    section{padding:70px 20px;text-align:center;}
+    .hero{background:linear-gradient(to right,#1d3557,#457b9d);color:#fff;padding:120px 20px;}
+    .hero h2{font-size:42px;margin-bottom:15px;}
+    .hero p{font-size:18px;margin-bottom:30px;}
+    .btn{background:#e63946;color:#fff;padding:12px 28px;border-radius:30px;text-decoration:none;font-weight:600;transition:.3s;display:inline-block;margin-top:15px;}
+    .btn:hover{background:#ff4d5a;}
+    .btn i{margin-right:8px;}
+
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;margin-top:40px;}
+    .card{background:#fff;padding:25px;border-radius:15px;box-shadow:0 5px 18px rgba(0,0,0,.1);transition:.3s;}
+    .card:hover{transform:translateY(-8px);box-shadow:0 8px 25px rgba(0,0,0,.15);}
+    .card h3{margin-bottom:12px;color:#1d3557;}
+    .card p{font-size:15px;color:#555;}
+    .card i{font-size:36px;color:#e63946;margin-bottom:12px;}
+
+    /* Partner Companies */
+    .partners{margin-top:40px;}
+    .partner-logos{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;margin-top:30px;}
+    .partner{background:#fff;padding:20px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,.1);transition:.3s;font-weight:600;}
+    .partner:hover{transform:scale(1.05);box-shadow:0 6px 20px rgba(0,0,0,.15);}
+    .partner i{color:#1d3557;font-size:24px;margin-right:8px;}
+
+    iframe{width:100%;height:350px;border:0;border-radius:15px;margin-top:20px;}
+
+    footer{background:#1d3557;color:#fff;text-align:center;padding:20px;font-size:14px;}
+    footer a{color:#a8dadc;text-decoration:none;}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>JAI MATA DI DRUG STORE</h1>
+    <span class="menu-toggle">?</span>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#partners">Companies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <h2>Your Trusted Pharmacy</h2>
+    <p>Reliable medicines & healthcare products for your family</p>
+    <a href="#contact" class="btn"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At <b>JAI MATA DI DRUG STORE</b>, we are dedicated to serving the community with quality medicines, health supplements, and wellness products.  
+    Our mission is to provide trusted healthcare solutions with personalized support.</p>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <i class="fa-solid fa-pills"></i>
+        <h3>Medicines</h3>
+        <p>Wide selection of genuine medicines at affordable prices.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-heartbeat"></i>
+        <h3>Healthcare Products</h3>
+        <p>Supplements, personal care, wellness, and daily essentials.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-user-doctor"></i>
+        <h3>Expert Guidance</h3>
+        <p>Friendly staff to guide you about dosage & safe usage.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNER COMPANIES -->
+  <section id="partners">
+    <h2>We Deal In</h2>
+    <p>We supply trusted medicines & products from leading pharmaceutical companies.</p>
+    <div class="partner-logos">
+      <div class="partner"><i class="fa-solid fa-capsules"></i> Macleods</div>
+      <div class="partner"><i class="fa-solid fa-capsules"></i> Aristo</div>
+      <div class="partner"><i class="fa-solid fa-capsules"></i> Mankind</div>
+      <div class="partner"><i class="fa-solid fa-capsules"></i> Dr. Morepen</div>
+      <div class="partner"><i class="fa-solid fa-capsules"></i> Cipla</div>
+      <div class="partner"><i class="fa-solid fa-capsules"></i> Sun Pharma</div>
+      <div class="partner"><i class="fa-solid fa-capsules"></i> Lupin</div>
+      <div class="partner"><i class="fa-solid fa-capsules"></i> Zydus</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:thejmdpharma.myyahoo.com">thejmdpharma.myyahoo.com</a></p>
+    <p><b>Store Hours:</b> 9:00 AM – 9:00 PM (All Days)</p>
+
+    <!-- GET LOCATION BUTTON -->
+    <a href="https://maps.google.com/?q=JAI+MATA+DI+DRUG+STORE+Bilaspur" target="_blank" class="btn"><i class="fa-solid fa-location-dot"></i> Get Location</a>
+
+    <!-- LIVE GOOGLE MAP -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14245.156004240474!2d82.1495459!3d22.0796225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3992fc04e24f749b%3A0x63bf6bb99848744c!2sBilaspur%2C%20Chhattisgarh%2C%20India!5e0!3m2!1sen!2sin!4v1700000000000" 
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 JAI MATA DI DRUG STORE | Designed with ?? | <a href="#home">Back to Top</a></p>
+  </footer>
+
+  <script>
+    document.querySelector(".menu-toggle").addEventListener("click", () => {
+      document.querySelector("nav ul").classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>
